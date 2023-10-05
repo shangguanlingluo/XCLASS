@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FitControl>
+    <!-- settings for fit process -->
+
+
+    <!-- set number of used algorithms -->
+    <NumberOfFitAlgorithms>2</NumberOfFitAlgorithms>
+
+
+
+
+    <!-- define settings for 2nd algorithm -->
+    <algorithm>
+        <FitAlgorithm>Levenberg-Marquardt</FitAlgorithm> TODO
+
+
+        <!-- set max. number of iterations -->
+        <number_iterations>50</number_iterations>
+
+
+        <!-- set max. number of processors -->
+        <NumberProcessors>12</NumberProcessors> TODO
+
+
+        <!-- set path and name of host file -->
+        <MPIHostFileName> </MPIHostFileName>
+
+
+        <!-- settings for chi^2 -->
+        <limit_of_chi2>1e-6</limit_of_chi2> TODO
+        <RenormalizedChi2>yes</RenormalizedChi2> TODO
+        <DeterminationChi2>default</DeterminationChi2> TODO
+        <SaveChi2>yes</SaveChi2>
+
+
+        <!-- set plot options -->
+        <PlotAxisX>Rest Frequency [MHz]</PlotAxisX>
+        <PlotAxisY>T_mb [K]</PlotAxisY>
+        <PlotIteration>no</PlotIteration>
+    </algorithm>
+
+
+    <!-- define settings for 3rd algorithm -->
+    <algorithm>
+        <FitAlgorithm>errorestim_ins</FitAlgorithm>
+
+
+        <!-- set max. number of iterations -->
+        <number_iterations>50</number_iterations>
+
+
+        <!-- set max. number of processors -->
+        <NumberProcessors>12</NumberProcessors>
+
+
+        <!-- set path and name of host file -->
+        <MPIHostFileName> </MPIHostFileName>
+
+
+        <!-- settings for chi^2 -->
+        <limit_of_chi2>1e-5</limit_of_chi2>
+        <RenormalizedChi2>yes</RenormalizedChi2>
+        <DeterminationChi2>default</DeterminationChi2>
+        <SaveChi2>yes</SaveChi2>
+
+
+        <!-- set plot options -->
+        <PlotAxisX>Rest Frequency [MHz]</PlotAxisX>
+        <PlotAxisY>T_mb [K]</PlotAxisY>
+        <PlotIteration>no</PlotIteration>
+    </algorithm>    
+</FitControl>
+
