@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExpFiles>
+
+
+    <!-- set number of exp. data files -->
+    <NumberExpFiles>1</NumberExpFiles>
+
+
+    <!-- ******************************************************************************************************************************* -->
+    <!-- parameters for import of obs. data file 1 -->
+   
+
+    <!-- ******************************************************************************************************************************* -->
+    <!-- parameters for import of obs. data file 2 -->
+    <file>
+
+
+        <!-- define path and name of obs. data file -->
+        <FileNamesExpFiles>I17016_39.txt</FileNamesExpFiles>
+
+
+        <!-- define kind of obs. data file -->
+        <ImportFilter>xclassASCII</ImportFilter> TODO
+
+
+        <!-- define number of frequency ranges -->
+        <NumberExpRanges>1</NumberExpRanges>
+
+
+        <!-- define parameters for frequency range 1 -->
+        <FrequencyRange>
+
+
+            <!-- define min., max., and step frequency -->
+            <MinExpRange>99847.0</MinExpRange>
+            <MaxExpRange>101285.0</MaxExpRange>
+            <StepFrequency>0.7</StepFrequency>
+
+
+            <!-- define background temperature and slope -->
+            <t_back_flag>False</t_back_flag>
+            <BackgroundTemperature>0.0</BackgroundTemperature>
+            <TemperatureSlope>None</TemperatureSlope>
+        </FrequencyRange>
+
+
+        <!-- define local standard of rest (vLSR) -->
+        <GlobalvLSR>0.0</GlobalvLSR>
+
+
+        <!-- define size of telescope -->
+        <TelescopeSize>1.8</TelescopeSize>
+
+
+        <!-- define if interferrometric observation is modeled -->
+        <Inter_Flag>True</Inter_Flag>
+
+
+        <!-- define parameters for ASCII file import -->
+        <ErrorY>False</ErrorY>
+        <NumberHeaderLines>1</NumberHeaderLines>
+        <SeparatorColumns> </SeparatorColumns>
+    </file>
+
+
+    <!-- **************************** -->
+    <!-- parameters for isotopologues -->
+   
+
+    <!-- ****************************************************************** -->
+    <!-- define path and name of database file -->
+    <dbFilename>/software/XCLASS-Interface/Database/cdms_sqlite.db</dbFilename>
+</ExpFiles>
+
